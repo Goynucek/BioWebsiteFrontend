@@ -1,0 +1,130 @@
+h1,h2,p{
+    color: rgb(56, 56, 56);
+    text-shadow:2px 2px rgba(49, 49, 49, 0.226);
+}
+#Menu{
+    width: 75em;
+    height: 35em;
+    border-radius: 15px;
+    background-color: rgb(235, 235, 235);
+    animation-name: Menu;
+    animation-duration: 1s;
+}
+
+#aboutMe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#image{
+    width: 20em;
+}
+
+#Pp{
+    width: 12em;
+    height: 12em;
+    margin-top: 3em;
+    margin-left: 7em;
+    box-shadow: 5px 5px rgba(99, 99, 99, 0.377);
+}
+
+#paragraph{
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 3em;
+}
+
+.Skills{
+    margin: auto;
+    height: 50%;
+    width: 80%;
+}
+
+.Skills h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+#progresses{
+    display: flex;
+    justify-content:center;
+}
+
+#progresses h2{
+    font-size: 25px;
+}
+
+.progress{
+    animation-name: progress;
+    animation-duration: 2s;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128);
+}
+
+@keyframes progress{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes Menu{
+    from{
+       transform: translateX(35em);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.main{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderCard{
+    width: 15em;
+    height: 10em;
+    margin-right: 1em;
+    background-color: wheat;
+    position: relative;
+    background-image: url(./img/portfolyo/1.jpg);
+}
+
+.blogHeader{
+    position: absolute;
+    color: whitesmoke;
+    font-size: larger;
+    text-shadow: 3px 3px 3px rgb(109, 109, 109);
+    width: 100%;
+    bottom: 1em;
+    left:  1em;
+}
+
+.slider{
+    height: 0;
+    width: 100%;
+    background-color: rgba(77, 77, 77, 0.603);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderCard:hover .slider{
+    height: 100%;
+}
+
+.slider a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
